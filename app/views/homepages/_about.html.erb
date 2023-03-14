@@ -1,0 +1,20 @@
+<!-- Grid -->
+<div class="w3-row-padding" id="about">
+  <div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+  </div>
+  <% project.each do |pro| %>
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+      # <img src="team1.jpg" alt="John" style="width:100%">
+      <%= image_tag "team1.jpg", style: "width:100%" %>
+      <div class="w3-container">
+        <h3><%= pro.title%></h3>
+        <p class="w3-opacity"><%= pro.subtitle%></p>
+        <p><%= pro.body%></p>
+        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
